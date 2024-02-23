@@ -53,6 +53,7 @@ function App() {
 				switch (e.key.toUpperCase()) {
 					case key:
 						playAudio(key, drumObj.title);
+						break;
 					default:
 						break;
 				}
