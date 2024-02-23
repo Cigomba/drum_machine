@@ -47,6 +47,7 @@ function App() {
 		Object.entries(drumSet).map(([key, drumObj]) => {
 			refs[key].parentElement.addEventListener("click", () => {
 				playAudio(key, drumObj.title);
+				return true;
 			});
 
 			document.addEventListener("keydown", e => {
